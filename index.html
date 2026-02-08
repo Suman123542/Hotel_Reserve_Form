@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grand Horizon Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="overlay">
+    <div class="hero-content">
+      <div class="stars">★★★★★</div>
+      <h1> The <span>Skyline</span> Hotel</h1>
+      <p>Experience unparalleled luxury and comfort. Book your perfect stay today.</p>
+    </div>
+  </div>
+</section>
+
+<section class="form-section">
+  <form id="bookingForm" novalidate>
+
+    <h2>Reserve Your Stay</h2>
+    <p class="subtitle">Fill out the form below to book your perfect room.</p>
+
+
+    <h3>Guest Information</h3>
+    <div class="grid">
+      <div>
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="John Doe">
+        <small class="error"></small>
+      </div>
+
+      <div>
+        <label>Email Address</label>
+        <input type="email" id="email" placeholder="john@example.com">
+        <small class="error"></small>
+      </div>
+
+      <div>
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="9876543210">
+        <small class="error"></small>
+      </div>
+    </div>
+
+    
+    <h3>Stay Details</h3>
+    <div class="grid">
+      <div>
+        <label>Check-in Date</label>
+        <input type="date" id="checkin">
+        <small class="error"></small>
+      </div>
+
+      <div>
+        <label>Check-out Date</label>
+        <input type="date" id="checkout">
+        <small class="error"></small>
+      </div>
+
+      <div>
+        <label>Room Type</label>
+        <select id="room">
+          <option value="">Select room type</option>
+          <option>Single Room</option>
+          <option>Double Room</option>
+          <option>Twin Room</option>
+          <option>Luxury Suite</option>
+          <option>Family Room</option>
+        </select>
+        <small class="error"></small>
+      </div>
+
+      <div>
+        <label>Adults</label>
+        <input type="number" id="adults" min="1">
+        <small class="error"></small>
+      </div>
+
+      <div>
+        <label>Children</label>
+        <input type="number" id="children" min="0">
+      </div>
+    </div>
+
+    <label>Special Requests (Optional)</label>
+    <textarea id="requests" placeholder="Any special requests..."></textarea>
+
+    <button type="submit">Complete Reservation</button>
+
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
